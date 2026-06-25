@@ -25,6 +25,16 @@ vim.lsp.enable({
   "solargraph"
 })
 
+vim.lsp.config('rust_analyzer', {
+  settings = {
+    ["rust-analyzer"] = {
+      rustfmt = {
+        overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
+      },
+    },
+  },
+})
+
 vim.lsp.config('lua_ls', {
   settings = {
     Lua = {
