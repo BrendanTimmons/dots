@@ -3,3 +3,4 @@
 *.pid
 *.bak
 history.toml
+resume.json
