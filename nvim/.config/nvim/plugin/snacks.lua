@@ -1,4 +1,6 @@
-vim.pack.add({ "https://github.com/folke/snacks.nvim" })
+vim.pack.add({
+  "https://github.com/folke/snacks.nvim"
+})
 
 require("snacks").setup({
   bigfile = { enabled = true },
@@ -60,6 +62,8 @@ vim.keymap.set("n", "<leader>a", function() Snacks.dashboard() end, { desc = "Da
 vim.keymap.set("n", "<leader><space>", function() Snacks.picker.smart() end, { desc = "Smart Find Files" })
 vim.keymap.set("n", "<leader>,", function() Snacks.picker.buffers() end, { desc = "Buffers" })
 vim.keymap.set("n", "<leader>n", function() Snacks.picker.notifications() end, { desc = "Notification History" })
+vim.keymap.set("n", "<leader>h", function() Snacks.picker.highlights({ pattern = "hl_group:^Snacks" }) end,
+  { desc = "Snacks highlights" })
 
 -- find
 vim.keymap.set("n", "<leader>C", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end,

@@ -64,17 +64,7 @@ vec4 saturate(vec4 color, float factor) {
     return mix(vec4(gray), color, factor);
 }
 
-// MFD-NVG GLOW
-// vec4 TRAIL_COLOR = vec4(0.565, 0.847, 0.408, 1.0);
-// MFD-NVG FLAT
-vec4 TRAIL_COLOR = vec4(0.592, 0.729, 0.525, 1.0);
-
-// Use cursor color (MFD-NVG old)
-//vec4 TRAIL_COLOR = iCurrentCursorColor;
-
-// MFD-NERV - Burning Orange #EE8822
-// vec4 TRAIL_COLOR = vec4(0.933, 0.533, 0.133, 1.0);
-
+vec4 TRAIL_COLOR = iCurrentCursorColor;
 const float OPACITY = 0.3;
 const float DURATION = 0.2; //IN SECONDS
 

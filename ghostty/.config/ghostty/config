@@ -1,8 +1,8 @@
-theme = mfd-nvg.conf
+theme = resheph.conf
 font-family = "FiraCode Nerd Font"
-font-size = 17 
-background-opacity = 0.98
-background-blur = true
+font-size = 12 
+background-opacity = 1 
+background-blur = true 
 macos-icon = holographic
 window-inherit-font-size = false
 
@@ -11,8 +11,6 @@ macos-titlebar-proxy-icon = hidden
 shell-integration-features = no-title
 title = " "
 macos-titlebar-style = hidden
-
-macos-option-as-alt = true
 
 # shaders
 # custom-shader = "~/.config/ghostty/shaders/crt.glsl"

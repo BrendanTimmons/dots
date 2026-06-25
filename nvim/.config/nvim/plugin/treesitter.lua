@@ -1,6 +1,6 @@
 vim.pack.add({
-    { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = 'main' },
-    { src = "https://github.com/nvim-treesitter/nvim-treesitter-context", },
+  { src = "https://github.com/nvim-treesitter/nvim-treesitter",         version = 'main' },
+  { src = "https://github.com/nvim-treesitter/nvim-treesitter-context", },
 })
 local ts_parsers = {
   "bash",
@@ -13,15 +13,17 @@ local ts_parsers = {
   "markdown",
   "python",
   "terraform",
+  "rust",
+  "diff",
   "vim", "vimdoc",
 }
 
 local nts = require("nvim-treesitter")
 nts.install(ts_parsers)
-vim.api.nvim_create_autocmd('PackChanged', { 
-    callback = function()
-        nts.update()
-    end
+vim.api.nvim_create_autocmd('PackChanged', {
+  callback = function()
+    nts.update()
+  end
 })
 
 require("treesitter-context").setup({
@@ -33,7 +35,7 @@ require("treesitter-context").setup({
 })
 
 -- enable treesitter highlighting and indents
-vim.api.nvim_create_autocmd("FileType", { 
+vim.api.nvim_create_autocmd("FileType", {
   callback = function(args)
     local filetype = args.match
     local lang = vim.treesitter.language.get_lang(filetype)

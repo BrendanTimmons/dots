@@ -70,8 +70,11 @@ vec4 saturate(vec4 color, float factor) {
 // mauve
 // const vec4 TRAIL_COLOR = vec4(0.796, 0.651, 0.969, 1.0);
 
-// nvg
-const vec4 TRAIL_COLOR = vec4(0.565, 0.847, 0.408, 1.0);
+// mfd-nvg
+// const vec4 TRAIL_COLOR = vec4(0.565, 0.847, 0.408, 1.0);
+
+// mfd-flir-rh
+const vec4 TRAIL_COLOR = vec4(0.753, 0.220, 0.220, 1.0);
 
 // peach
 // const vec4 TRAIL_COLOR = vec4(0.98, 0.702, 0.529, 1.0);

@@ -1,0 +1,130 @@
+[general]
+font-sans = "FiraCode Nerd Font Mono"
+font-mono = "FiraCode Nerd Font Mono"
+
+[bar]
+inset-edge = 1.0
+padding-ends = 1.5
+bg = "transparent"
+button-rounding = "md"
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "dashboard",
+    "hyprland-workspaces",
+]
+center = [
+    "media",
+    "cava",
+]
+right = [
+    "weather",
+    "clock",
+    "network",
+    "microphone",
+    "volume",
+    "systray",
+    "notifications",
+]
+
+[styling]
+scale = 1.0
+
+[styling.palette]
+bg = "#0b1c1b"
+surface = "#0f3b3a"
+elevated = "#155352"
+fg = "#fff"
+fg-muted = "#b1c9c3"
+primary = "#cfc041"
+red = "#d74200"
+yellow = "#cfc041"
+green = "#009403"
+blue = "#0096ff"
+
+[modules.cava]
+bars = 30
+color = "accent-subtle"
+button-bg-color = "bg-surface"
+
+[modules.clock]
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-muted"
+button-bg-color = "bg-surface"
+
+[modules.dashboard]
+icon-color = "accent"
+icon-bg-color = "transparent"
+dropdown-logout-command = "hyprshutdown --vt 1"
+
+[modules.hyprland-workspaces]
+label-use-name = true
+divider = "  "
+app-icons-show = true
+
+[modules.media]
+format = "{{status_icon}} {{ title }} - {{ artist }}"
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-muted"
+label-max-length = 40
+button-bg-color = "bg-surface"
+
+[modules.microphone]
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-muted"
+button-bg-color = "bg-surface"
+
+[modules.network]
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-muted"
+button-bg-color = "bg-surface"
+
+[modules.notifications]
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-muted"
+button-bg-color = "bg-surface"
+popup-monitor = "DP-4"
+
+[modules.systray]
+button-bg-color = "bg-surface"
+
+[modules.volume]
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-muted"
+button-bg-color = "bg-surface"
+
+[modules.weather]
+location = "Melbourne"
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-muted"
+button-bg-color = "bg-surface"
+
+[osd]
+monitor = "DP-4"
+
+[wallpaper]
+transition-type = "any"
+transition-duration = 2.799999952316284
+cycling-enabled = true
+cycling-directory = "/home/brendan/Pictures/cyberpunk"
+cycling-mode = "shuffle"
+cycling-interval-mins = 60
+
+[[wallpaper.monitors]]
+name = "DP-4"
+fit-mode = "fill"
+wallpaper = "/home/brendan/Pictures/mj-walls/kamikazesxpilot_An_impressionist_oil_painting_of_a_bloodied_w_54601f82-4791-464d-93d1-7d98559faf0f_3.png"
+
+[[wallpaper.monitors]]
+name = "HDMI-A-2"
+fit-mode = "fill"
+wallpaper = "/home/brendan/Pictures/mj-walls/kamikazesxpilot_An_impressionist_oil_painting_of_a_bloodied_w_54601f82-4791-464d-93d1-7d98559faf0f_3.png"

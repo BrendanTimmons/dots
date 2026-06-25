@@ -36,6 +36,10 @@
       "rev": "72ae627792960a7e490cb5242a78c570d02ba775",
       "src": "https://github.com/kungfusheep/mfd.nvim"
     },
+    "milli.nvim": {
+      "rev": "00274623b76a66356e31e1861360b269987a7f64",
+      "src": "https://github.com/amansingh-afk/milli.nvim"
+    },
     "nvim-cmp": {
       "rev": "a1d504892f2bc56c2e79b65c6faded2fd21f3eca",
       "src": "https://github.com/hrsh7th/nvim-cmp"
@@ -67,7 +71,7 @@
     },
     "resheph.nvim": {
       "rev": "74ad751dfc5d438292905f952e7b50fe53169008",
-      "src": "https://github.com/BrendanTimmons/resheph.nvim"
+      "src": "file:///home/brendan/Projects/resheph.nvim"
     },
     "snacks.nvim": {
       "rev": "882c996cf28183f4d63640de0b4c02ec886d01f2",

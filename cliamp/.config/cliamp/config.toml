@@ -1,11 +1,9 @@
-theme = ""
+theme = "resheph"
 
 visualizer = "None"
 eq_preset = "Electronic"
 eq = [6, 4, 1, -1, -2, 1, 3, 4, 5, 6]
-volume = -18
-repeat = "All"
 
-speed = 1.00
-[ytmusic]
-enabled = true
+[plex]
+url   = "${PLEX_URL}"
+token = "${PLEX_TOKEN}"

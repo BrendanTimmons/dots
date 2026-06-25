@@ -19,7 +19,7 @@
 
 // How far apart the different colors are from each other
 // x \in R
-#define COLOR_FRINGING_SPREAD 0.0
+#define COLOR_FRINGING_SPREAD 0.6
 
 // How much the ghost images are spread out
 // x \in R : x >= 0
@@ -34,10 +34,10 @@
 
 // How far in the vignette spreads
 // x \in R : x >= 0
-#define VIGNETTE_SPREAD 0.225
+#define VIGNETTE_SPREAD 0.3
 // How bright the vignette is
 // x \in R : x >= 0
-#define VIGNETTE_BRIGHTNESS 6
+#define VIGNETTE_BRIGHTNESS 10.0
 
 // Tint all colors
 // [0, 1]^3
