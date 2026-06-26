@@ -3,6 +3,7 @@ theme = "resheph"
 visualizer = "None"
 eq_preset = "Classical"
 eq = [3, 2, 1, 0, -1, -1, 0, 2, 3, 4]
+volume = -16
 
 [plex]
 url   = "${PLEX_URL}"
