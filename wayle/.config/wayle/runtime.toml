@@ -9,7 +9,7 @@ bg = "transparent"
 button-rounding = "md"
 
 [[bar.layout]]
-monitor = "*"
+monitor = "DP-4"
 show = true
 left = [
     "dashboard",
@@ -27,6 +27,23 @@ right = [
     "volume",
     "systray",
     "notifications",
+]
+
+[[bar.layout]]
+monitor = "HDMI-A-2"
+show = true
+left = [
+    "dashboard",
+    "hyprland-workspaces",
+]
+center = [
+    "media",
+    "cava",
+]
+right = [
+    "clock",
+    "microphone",
+    "volume",
 ]
 
 [styling]

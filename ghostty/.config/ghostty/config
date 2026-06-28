@@ -1,7 +1,7 @@
 theme = resheph.conf
 font-family = "FiraCode Nerd Font"
-font-size = 16
-background-opacity = 1 
+font-size = 12
+background-opacity = 0.8
 background-blur = true 
 macos-icon = holographic
 window-inherit-font-size = false

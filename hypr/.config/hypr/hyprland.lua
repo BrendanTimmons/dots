@@ -442,12 +442,25 @@ hl.window_rule({
 hl.window_rule({
   name = "Game Windowed",
   match = {
-    class = "steam_app_.*|cogmind", -- add your games here, follow regex!
+    class = "steam_app_.*|cogmind|CoQ.x86_64", -- add your games here, follow regex!
   },
 
   float = true,
   fullscreen = false,
   size = "1920 1080",
+  workspace = "special:game",
+  immediate = true,
+})
+
+hl.window_rule({
+  name = "Game Windowed BIG",
+  match = {
+    class = "steam_app_.*|CoQ.x86_64", -- add your games here, follow regex!
+  },
+
+  float = true,
+  fullscreen = false,
+  size = "2560 1440",
   workspace = "special:game",
   immediate = true,
 })
