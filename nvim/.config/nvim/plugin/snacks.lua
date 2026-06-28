@@ -53,9 +53,12 @@ require("snacks").setup({
     },
   },
   input = { enabled = true },
-  lazygit = { enabled = true },
+  lazygit = { enabled = true, layout = { width = 80 } },
   notifier = { enabled = true },
-  picker = { enabled = true },
+  picker = {
+    enabled = true,
+    layout = "ivy"
+  },
 })
 
 -- Snacks keymaps
@@ -71,7 +74,8 @@ vim.keymap.set("n", "<leader>h", function() Snacks.picker.highlights({ pattern =
 -- find
 vim.keymap.set("n", "<leader>C", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end,
   { desc = "Find Config File" })
-vim.keymap.set("n", "<C-P>", function() Snacks.picker.files() end, { desc = "Find Files" })
+vim.keymap.set("n", "<C-P>", function() Snacks.picker.files() end,
+  { desc = "Find Files" })
 
 -- git
 vim.keymap.set("n", "<leader>gb", function() Snacks.picker.git_branches() end, { desc = "Git Branches" })
@@ -82,7 +86,7 @@ vim.keymap.set("n", "<leader>gs", function() Snacks.picker.git_status() end, { d
 vim.keymap.set("n", "<leader>gS", function() Snacks.picker.git_stash() end, { desc = "Git Stash" })
 vim.keymap.set("n", "<leader>gd", function() Snacks.picker.git_diff() end, { desc = "Git Diff (Hunks)" })
 vim.keymap.set("n", "<leader>gf", function() Snacks.picker.git_log_file() end, { desc = "Git Log File" })
--- vim.keymap.set("n", "<leader>gg", function() Snacks.lazygit() end, { desc = "LazyGit" })
+vim.keymap.set("n", "<leader>gg", function() Snacks.lazygit() end, { desc = "LazyGit" })
 
 -- Grep
 vim.keymap.set("n", "<leader>sb", function() Snacks.picker.lines() end, { desc = "Buffer Lines" })

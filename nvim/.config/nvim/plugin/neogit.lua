@@ -8,4 +8,4 @@ local neogit = require("neogit")
 
 neogit.setup()
 
-vim.keymap.set("n", "<leader>gg", function() neogit.open({ kind = "split_below" }) end, { desc = "Neogit" })
+vim.keymap.set("n", "<leader>gG", function() neogit.open({ kind = "split_below" }) end, { desc = "Neogit" })

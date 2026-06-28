@@ -1,6 +1,6 @@
 vim.pack.add({
-	"https://github.com/nvim-tree/nvim-web-devicons",
-	"https://github.com/stevearc/oil.nvim",
+  "https://github.com/nvim-tree/nvim-web-devicons",
+  "https://github.com/stevearc/oil.nvim",
 })
 
 local opts = {
@@ -12,8 +12,11 @@ local opts = {
   view_options = {
     show_hidden = true,
   },
+  preview_win = {
+    preview_method = "load"
+  }
 }
 
 require("oil").setup(opts)
 
-vim.keymap.set("n", "<leader>o", "<cmd>Oil --float --preview<CR>", {desc = "Oil"})
+vim.keymap.set("n", "<leader>o", "<cmd>Oil --float --preview<CR>", { desc = "Oil" })
