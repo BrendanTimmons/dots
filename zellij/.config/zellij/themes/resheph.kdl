@@ -18,7 +18,7 @@ themes {
         }
         ribbon_selected {
             base 15 59 58 // ribbon text
-            background 119 191 207 // ribbon bg
+            background 207 192 65 // ribbon bg
             emphasis_0 0 0 0
             emphasis_1 0 0 0
             emphasis_2 0 0 0
