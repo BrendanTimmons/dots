@@ -9,8 +9,8 @@ themes {
             emphasis_3 21 83 82 // Ctrl g text (bottom left)
         }
         text_selected {
-            base 255 255 255 // selection fg
-            background 218 91 214 // selection bg
+            base 207 192 65 // selection fg
+            background 15 59 58 // selection bg
             emphasis_0 0 0 0
             emphasis_1 0 0 0
             emphasis_2 0 0 0
