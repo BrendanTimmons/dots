@@ -475,7 +475,7 @@ hl.window_rule({
 
 -- set workspaces
 
-for i = 1, 10 do
+for i = 1, 5 do
   local isDefault = i == 1
   hl.workspace_rule({ workspace = i, monitor = "DP-4", default = isDefault })
 end

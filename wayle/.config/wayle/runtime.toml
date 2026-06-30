@@ -9,7 +9,7 @@ bg = "transparent"
 button-rounding = "md"
 
 [[bar.layout]]
-monitor = "DP-4"
+monitor = "*"
 show = true
 left = [
     "dashboard",
@@ -30,7 +30,7 @@ right = [
 ]
 
 [[bar.layout]]
-monitor = "HDMI-A-2"
+monitor = "HDMI-A-1"
 show = true
 left = [
     "dashboard",
@@ -42,6 +42,20 @@ center = [
 ]
 right = [
     "clock",
+    "microphone",
+    "volume",
+]
+
+[[bar.layout]]
+monitor = "HDMI-A-2"
+extends = "HDMI-A-1"
+show = true
+left = ["media"]
+center = ["clock"]
+right = [
+    "battery",
+    "bluetooth",
+    "network",
     "microphone",
     "volume",
 ]

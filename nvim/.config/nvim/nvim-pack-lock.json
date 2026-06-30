@@ -70,7 +70,7 @@
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "resheph.nvim": {
-      "rev": "bbcd471a2da4b6037e8d73880919cc0455b28f99",
+      "rev": "f19d731d643ada9ad86ea688cf31bae7da26bc10",
       "src": "file:///home/brendan/Projects/resheph.nvim"
     },
     "snacks.nvim": {
